@@ -76,14 +76,14 @@ class PaddleSegModels(ModelsCollection):
     """
     def __init__(self):
         # super().__init__()
-        self.deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax = {"name" : ["deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax"], "url" : ["https://paddleseg.bj.bcebos.com/dygraph/humanseg/export/deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax.zip"]}
-        self.pphumanseg_lite_generic_192x192_with_softmax = {"name" : ["pphumanseg_lite_generic_192x192_with_softmax"], "url" : ["https://paddleseg.bj.bcebos.com/dygraph/humanseg/export/pphumanseg_lite_generic_192x192_with_softmax.zip"]}
+        self.deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax = {"name" : ["deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax.tar.gz"]}
+        self.pphumanseg_lite_generic_192x192_with_softmax = {"name" : ["pphumanseg_lite_generic_192x192_with_softmax"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/pphumanseg_lite_generic_192x192_with_softmax.tar.gz"]}
         self.OCRNet = {"name" : ["OCRNet"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/ocrnet.tar.gz"]}
         self.BiSeNetv2 = {"name" : ["BiSeNetv2"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/bisenet.tar.gz"]}
         self.SegFormer = {"name" : ["SegFormer"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/segformer.tar.gz"]}
         self.STDC = {"name" : ["STDC"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/stdcseg.tar.gz"]}
-        self.U_Net = {"name" : ["U_Net"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/unet_cityscapes_1024x512_160k.tgz"]}
-        self.DeepLabV3 = {"name" : ["DeepLabV3"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/deeplabv3p_resnet50_os8_cityscapes_1024x512_80k.tgz"]}
+        self.U_Net = {"name" : ["U_Net"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/unet_cityscapes_1024x512_160k.tar.gz"]}
+        self.DeepLabV3 = {"name" : ["DeepLabV3"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleSeg/v2.3/deeplabv3p_resnet50_os8_cityscapes_1024x512_80k.tar.gz"]}
 
     def GetUseOptTransModelsList(self):
         use_opt_trans_models_list = [self.deeplabv3p_resnet50_os8_humanseg_512x512_100k_with_softmax, 
@@ -97,14 +97,14 @@ class PaddleOCRModels(ModelsCollection):
     """
     def __init__(self):
         # super().__init__()
-        self.ch_ppocr_server_v2_0_rec = {"name" : ["ch_ppocr_server_v2_0_rec"], "url" : ["https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_rec_infer.tar"]}
-        self.ch_ppocr_server_v2_0_det = {"name" : ["ch_ppocr_server_v2_0_det"], "url" : ["https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_server_v2.0_det_infer.tar"]}
-        self.ch_PP_OCRv2_det = {"name" : ["ch_PP_OCRv2_det"], "url" : ["https://paddleocr.bj.bcebos.com/PP-OCRv2/chinese/ch_PP-OCRv2_det_infer.tar"]}
-        self.ch_PP_OCRv2_rec = {"name" : ["ch_PP_OCRv2_rec"], "url" : ["https://paddleocr.bj.bcebos.com/PP-OCRv2/chinese/ch_PP-OCRv2_rec_infer.tar"]}
-        self.crnn_ctc = {"name" : ["crnn_ctc"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/crnn_ctc.tar.gz"]}
-        self.e2e = {"name" : ["e2e"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/e2e.tar.gz"]}
-        self.OCR_DB = {"name" : ["OCR_DB "], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/ch_ppocr_mobile_v2.0_det_infer.tgz"]}
-        self.OCR_Clas = {"name" : ["OCR_Clas"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/ch_ppocr_mobile_v2.0_rec_infer.tgz"]}
+        self.ch_ppocr_server_v2_0_rec = {"name" : ["ch_ppocr_server_v2_0_rec"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_ppocr_server_v2.0_rec_infer.tar.gz"]}
+        self.ch_ppocr_server_v2_0_det = {"name" : ["ch_ppocr_server_v2_0_det"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_ppocr_server_v2.0_det_infer.tar.gz"]}
+        self.ch_PP_OCRv2_det = {"name" : ["ch_PP_OCRv2_det"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_PP-OCRv2_det_infer.tar.gz"]}
+        self.ch_PP_OCRv2_rec = {"name" : ["ch_PP_OCRv2_rec"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_PP-OCRv2_rec_infer.tar.gz"]}
+        self.crnn_ctc = {"name" : ["crnn_ctc"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/rec_crnn_mv3_ctc.tar.gz"]}
+        self.e2e = {"name" : ["e2e"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/e2e_server_pgnetA.tar.gz"]}
+        self.OCR_DB = {"name" : ["OCR_DB "], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_ppocr_mobile_v2_0_det_v2_0.tar.gz"]}
+        self.OCR_Clas = {"name" : ["OCR_Clas"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleOCR/v2.3/ch_ppocr_mobile_v2_0_rec_v2_0.tar.gz"]}
 
         ### Slim Model
         self.ch_PP_OCRv2_det_slim = {"name" : ["ch_PP_OCRv2_det_slim"], "url" : ["https://paddleocr.bj.bcebos.com/PP-OCRv2/chinese/ch_PP-OCRv2_det_slim_quant_infer.tar"]}
@@ -224,7 +224,7 @@ class PaddleGanModels(ModelsCollection):
     """
     def __init__(self):
         # super().__init__()
-        self.ESRGAN = {"name" : ["BlazeFace"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleGAN/esrgan_psnr_x4_div2k.tgz"]}
+        self.ESRGAN = {"name" : ["BlazeFace"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleGAN/esrgan_psnr_x4_div2k.tar.gz"]}
 
     def GetUseOptTransModelsList(self):
         use_opt_trans_models_list = [self.ESRGAN]
@@ -238,7 +238,7 @@ class PaddleNLPModels(ModelsCollection):
         # super().__init__()
         self.BERT = {"name" : ["BERT"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleNLP/bert_base_uncased.tgz"]}
         self.ERNIE = {"name" : ["ERNIE "], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleNLP/ernie_1.0.tgz"]}
-        self.ERNIE_TINY = {"name" : ["ERNIE_TINY"], "url" : [""]}
+        self.ERNIE_TINY = {"name" : ["ERNIE_TINY"], "url" : ["https://paddlelite-demo.bj.bcebos.com/NNAdapter/models/PaddleNLP/ernie_tiny.tar.gz"]}
 
     def GetUseOptTransModelsList(self):
         use_opt_trans_models_list = [self.BERT, self.ERNIE, self.ERNIE_TINY]
